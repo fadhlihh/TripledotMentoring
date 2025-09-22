@@ -421,7 +421,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c031363c41efea44b34e9891d08be57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _level: 0
+  _name: 
+  _health: 80
+  _maxHealth: 100
+  _canCombat: 1
+  _physical: 0
+  _dexterity: 0
+  _intelligence: 0
+  _luck: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
