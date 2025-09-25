@@ -1,6 +1,9 @@
-public enum WeaponType
+namespace TrainingTripledot.Sesi3
 {
-    Range,
-    Melee,
-    Gun
+    public enum WeaponType
+    {
+        Range,
+        Melee,
+        Gun
+    }
 }

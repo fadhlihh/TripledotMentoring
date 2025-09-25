@@ -1,15 +1,19 @@
 using System.Collections.Generic;
+using TrainingTripledot.Sesi2;
 using UnityEngine;
 
-public class CarData : MonoBehaviour
+namespace TrainingTripledot.Sesi3
 {
-    [SerializeField]
-    private List<Car> carList = new List<Car>();
-
-    private void Start()
+    public class CarData : MonoBehaviour
     {
-        Car car = carList.Find(car => string.Equals(car.Name, "Avanza"));
-        bool isAvanzaExsist = carList.Exists(car => string.Equals(car.Name, "Avanza"));
-        // carList.Remove(car);
+        [SerializeField]
+        private List<Car> carList = new List<Car>();
+
+        private void Start()
+        {
+            Car car = carList.Find(car => string.Equals(car.Name, "Avanza"));
+            bool isAvanzaExsist = carList.Exists(car => string.Equals(car.Name, "Avanza"));
+            // carList.Remove(car);
+        }
     }
 }

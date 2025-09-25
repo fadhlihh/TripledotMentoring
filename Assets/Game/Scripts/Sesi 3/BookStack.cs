@@ -1,29 +1,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BookStack : MonoBehaviour
+namespace TrainingTripledot.Sesi3
 {
-    [SerializeField]
-    private string text;
-    [SerializeField]
-    private List<string> _bookTitles;
-    private Stack<string> _bookStack = new Stack<string>();
-
-    private void Start()
+    public class BookStack : MonoBehaviour
     {
-        foreach (string title in _bookTitles)
+        [SerializeField]
+        private string text;
+        [SerializeField]
+        private List<string> _bookTitles;
+        private Stack<string> _bookStack = new Stack<string>();
+
+        private void Start()
         {
-            _bookStack.Push(title);
+            foreach (string title in _bookTitles)
+            {
+                _bookStack.Push(title);
+            }
         }
-    }
 
-    private void Update()
-    {
-        bool isSpaceDetected = Input.GetKeyDown(KeyCode.Space);
-        if (isSpaceDetected)
+        private void Update()
         {
-            string book = _bookStack.Pop();
-            Debug.Log(book);
+            bool isSpaceDetected = Input.GetKeyDown(KeyCode.Space);
+            if (isSpaceDetected)
+            {
+                string book = _bookStack.Pop();
+                Debug.Log(book);
+            }
         }
     }
 }

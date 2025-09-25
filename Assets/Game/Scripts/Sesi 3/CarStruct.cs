@@ -1,15 +1,18 @@
-public struct CarStruct
+namespace TrainingTripledot.Sesi3
 {
-    public string Manufacture { get; private set; }
-    public string Name { get; private set; }
-    public string Color { get; private set; }
-    public string LicensePlate { get; set; }
-
-    public CarStruct(string manufacture, string name, string color, string licensePlate)
+    public struct CarStruct
     {
-        Manufacture = manufacture;
-        Name = name;
-        Color = color;
-        LicensePlate = licensePlate;
+        public string Manufacture { get; private set; }
+        public string Name { get; private set; }
+        public string Color { get; private set; }
+        public string LicensePlate { get; set; }
+
+        public CarStruct(string manufacture, string name, string color, string licensePlate)
+        {
+            Manufacture = manufacture;
+            Name = name;
+            Color = color;
+            LicensePlate = licensePlate;
+        }
     }
 }

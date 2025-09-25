@@ -1,26 +1,29 @@
 using UnityEngine;
 
-public class ObjectSpawner : MonoBehaviour
+namespace TrainingTripledot.Sesi3
 {
-    [SerializeField]
-    private GameObject spawnPrefab;
-    [SerializeField]
-    private Transform spawnTransform;
-
-    private GameObject lastSpawnObject;
-
-    private void Update()
+    public class ObjectSpawner : MonoBehaviour
     {
-        bool detectSpaceInput = Input.GetKeyDown(KeyCode.Space);
-        if (detectSpaceInput == true)
-        {
-            lastSpawnObject = Instantiate(spawnPrefab, spawnTransform.position, spawnTransform.rotation);
-        }
+        [SerializeField]
+        private GameObject spawnPrefab;
+        [SerializeField]
+        private Transform spawnTransform;
 
-        bool detectEInput = Input.GetKeyDown(KeyCode.E);
-        if (detectEInput)
+        private GameObject lastSpawnObject;
+
+        private void Update()
         {
-            Destroy(lastSpawnObject);
+            bool detectSpaceInput = Input.GetKeyDown(KeyCode.Space);
+            if (detectSpaceInput == true)
+            {
+                lastSpawnObject = Instantiate(spawnPrefab, spawnTransform.position, spawnTransform.rotation);
+            }
+
+            bool detectEInput = Input.GetKeyDown(KeyCode.E);
+            if (detectEInput)
+            {
+                Destroy(lastSpawnObject);
+            }
         }
     }
 }

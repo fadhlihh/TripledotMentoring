@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class Guitar : MusicInstrument
+namespace TrainingTripledot.Sesi2
 {
-    private string _type;
-    public Guitar(string name, string type) : base(name)
+    public class Guitar : MusicInstrument
     {
-        _type = type;
-    }
-    public override void Play()
-    {
-        Debug.Log("Pick Guitar String");
+        private string _type;
+        public Guitar(string name, string type) : base(name)
+        {
+            _type = type;
+        }
+        public override void Play()
+        {
+            Debug.Log("Pick Guitar String");
+        }
     }
 }

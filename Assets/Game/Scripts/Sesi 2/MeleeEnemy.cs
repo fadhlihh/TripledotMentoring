@@ -1,18 +1,21 @@
 using UnityEngine;
 
-public class MeleeEnemy : Enemy
+namespace TrainingTripledot.Sesi2
 {
-    private int _weaponDurability = 100;
-
-    public int WeaponDurability { get => _weaponDurability; }
-
-    public void RepairWeapon()
+    public class MeleeEnemy : Enemy
     {
-        Debug.Log("Repair Weapon");
-    }
+        private int _weaponDurability = 100;
 
-    public override void Attack()
-    {
-        Debug.Log("Attack with sword");
+        public int WeaponDurability { get => _weaponDurability; }
+
+        public void RepairWeapon()
+        {
+            Debug.Log("Repair Weapon");
+        }
+
+        public override void Attack()
+        {
+            Debug.Log("Attack with sword");
+        }
     }
 }

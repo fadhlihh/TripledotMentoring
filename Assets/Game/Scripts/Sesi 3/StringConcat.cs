@@ -1,10 +1,13 @@
 using UnityEngine;
 
-public static class StringConcat
+namespace TrainingTripledot.Sesi3
 {
-    public static string Concat(string a, string b)
+    public static class StringConcat
     {
-        string result = a + b;
-        return result;
+        public static string Concat(string a, string b)
+        {
+            string result = a + b;
+            return result;
+        }
     }
 }

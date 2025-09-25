@@ -1,19 +1,22 @@
 using UnityEngine;
 
-public class RangedEnemy : Enemy
+namespace TrainingTripledot.Sesi2
 {
-    private int _ammunition = 10;
-
-    public int Ammunition { get => _ammunition; }
-
-    public void Reload()
+    public class RangedEnemy : Enemy
     {
-        _ammunition = 10;
-        Debug.Log("Reload");
-    }
+        private int _ammunition = 10;
 
-    public override void Attack()
-    {
-        Debug.Log("Attack with bow");
+        public int Ammunition { get => _ammunition; }
+
+        public void Reload()
+        {
+            _ammunition = 10;
+            Debug.Log("Reload");
+        }
+
+        public override void Attack()
+        {
+            Debug.Log("Attack with bow");
+        }
     }
 }

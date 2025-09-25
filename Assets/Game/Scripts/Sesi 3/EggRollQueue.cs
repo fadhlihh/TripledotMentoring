@@ -1,25 +1,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EggRollQueue : MonoBehaviour
+namespace TrainingTripledot.Sesi3
 {
-    private Queue<string> eggRollQueue = new Queue<string>();
-
-    private void Start()
+    public class EggRollQueue : MonoBehaviour
     {
-        eggRollQueue.Enqueue("Glina");
-        eggRollQueue.Enqueue("Phoebe");
-        eggRollQueue.Enqueue("Inge");
-        eggRollQueue.Enqueue("Peter");
-    }
+        private Queue<string> eggRollQueue = new Queue<string>();
 
-    private void Update()
-    {
-        bool isSpaceDetected = Input.GetKeyDown(KeyCode.Space);
-        if (isSpaceDetected)
+        private void Start()
         {
-            string name = eggRollQueue.Dequeue();
-            Debug.Log(name);
+            eggRollQueue.Enqueue("Glina");
+            eggRollQueue.Enqueue("Phoebe");
+            eggRollQueue.Enqueue("Inge");
+            eggRollQueue.Enqueue("Peter");
+        }
+
+        private void Update()
+        {
+            bool isSpaceDetected = Input.GetKeyDown(KeyCode.Space);
+            if (isSpaceDetected)
+            {
+                string name = eggRollQueue.Dequeue();
+                Debug.Log(name);
+            }
         }
     }
 }

@@ -1,13 +1,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExampleEnum : MonoBehaviour
+namespace TrainingTripledot.Sesi3
 {
-    [SerializeField]
-    List<Weapon> weaponList;
-
-    private void Start()
+    public class ExampleEnum : MonoBehaviour
     {
-        weaponList.Find(weapon => weapon.Type == WeaponType.Range);
+        [SerializeField]
+        List<Weapon> weaponList;
+
+        private void Start()
+        {
+            weaponList.Find(weapon => weapon.Type == WeaponType.Range);
+        }
     }
 }

@@ -1,23 +1,26 @@
 using UnityEngine;
 
-public class MusicInstrument : MonoBehaviour
+namespace TrainingTripledot.Sesi2
 {
-    private string _name;
-    private int _number;
-
-    public MusicInstrument(string name)
+    public class MusicInstrument : MonoBehaviour
     {
-        _name = name;
-    }
+        private string _name;
+        private int _number;
 
-    public MusicInstrument(string name, int number)
-    {
-        _name = name;
-        _number = number;
-    }
+        public MusicInstrument(string name)
+        {
+            _name = name;
+        }
 
-    public virtual void Play()
-    {
+        public MusicInstrument(string name, int number)
+        {
+            _name = name;
+            _number = number;
+        }
 
+        public virtual void Play()
+        {
+
+        }
     }
 }

@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class ExampleStatic : MonoBehaviour
+namespace TrainingTripledot.Sesi3
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public class ExampleStatic : MonoBehaviour
     {
-        string result = StringConcat.Concat("Hello", " World");
-        Debug.Log(result);
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        void Start()
+        {
+            string result = StringConcat.Concat("Hello", " World");
+            Debug.Log(result);
+        }
     }
 }

@@ -1,9 +1,12 @@
 using System;
 
-[Serializable]
-public class Weapon
+namespace TrainingTripledot.Sesi3
 {
-    public string Name;
-    public int Damage;
-    public WeaponType Type;
+    [Serializable]
+    public class Weapon
+    {
+        public string Name;
+        public int Damage;
+        public WeaponType Type;
+    }
 }

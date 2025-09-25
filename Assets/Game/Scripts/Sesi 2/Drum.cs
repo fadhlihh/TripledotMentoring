@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class Drum : MusicInstrument
+namespace TrainingTripledot.Sesi2
 {
-    public Drum(string name) : base(name)
+    public class Drum : MusicInstrument
     {
+        public Drum(string name) : base(name)
+        {
 
-    }
-    public override void Play()
-    {
-        Debug.Log("Hit Drum");
+        }
+        public override void Play()
+        {
+            Debug.Log("Hit Drum");
+        }
     }
 }

@@ -1,33 +1,36 @@
 using UnityEngine;
 
-public class ChangeColor : MonoBehaviour
+namespace TrainingTripledot.Sesi2
 {
-    [SerializeField]
-    private Material _material;
-    private MeshRenderer meshRenderer;
-
-    private void Awake()
+    public class ChangeColor : MonoBehaviour
     {
-        meshRenderer = GetComponent<MeshRenderer>();
-    }
+        [SerializeField]
+        private Material _material;
+        private MeshRenderer meshRenderer;
 
-    void OnCollisionEnter(Collision collision)
-    {
-        meshRenderer.material = _material;
-    }
+        private void Awake()
+        {
+            meshRenderer = GetComponent<MeshRenderer>();
+        }
 
-    void OnCollisionStay(Collision collision)
-    {
+        void OnCollisionEnter(Collision collision)
+        {
+            meshRenderer.material = _material;
+        }
 
-    }
+        void OnCollisionStay(Collision collision)
+        {
 
-    void OnCollisionExit(Collision collision)
-    {
+        }
 
-    }
+        void OnCollisionExit(Collision collision)
+        {
 
-    void OnTriggerEnter(Collider other)
-    {
+        }
 
+        void OnTriggerEnter(Collider other)
+        {
+
+        }
     }
 }

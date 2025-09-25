@@ -1,10 +1,13 @@
-public enum Keyword
+namespace TrainingTripledot.Sesi3
 {
-    Object,
-    Struct,
-    Array,
-    List,
-    Queue,
-    Stack,
-    Dictionary
+    public enum Keyword
+    {
+        Object,
+        Struct,
+        Array,
+        List,
+        Queue,
+        Stack,
+        Dictionary
+    }
 }
