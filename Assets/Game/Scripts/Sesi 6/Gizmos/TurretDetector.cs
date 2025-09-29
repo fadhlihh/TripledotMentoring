@@ -20,8 +20,8 @@ namespace TrainingTripledot.Sesi6
                 if (distance < _detectionDistance)
                 {
                     Gizmos.color = Color.red;
-                    Gizmos.DrawLine(transform.position, detectedObject.transform.position);
-                    Gizmos.DrawWireSphere(detectedObject.transform.position, .5f);
+                    Gizmos.DrawLine(transform.position, detectedObject.transform.position + transform.up * 2f);
+                    Gizmos.DrawWireSphere(detectedObject.transform.position + transform.up * 2f, .5f);
                 }
             }
         }
